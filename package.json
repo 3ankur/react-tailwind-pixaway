@@ -2,7 +2,7 @@
   "name": "react-tailwindcss",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://3ankur.github.io/react-tailwind-pixaway",
+  "homepage": "https://3ankur.github.io/react-tailwind-pixaway",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",

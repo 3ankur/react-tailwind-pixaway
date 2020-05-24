@@ -10,11 +10,13 @@ function App() {
   const [videos, setVideos] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [isImage, setIsImage] = useState(true);
+  const [lodePage, setLoadePage] = useState(1);
   const loadImages = async () => {
     try {
-      const res = await window.fetch(`https://pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_API_KEY}&q=${searchTerm}&image_type=photo`);
+      const res = await window.fetch(`https://pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_API_KEY}&q=${searchTerm}&image_type=photo&page=${lodePage}`);
       const data = await res.json();
-      setImages(data.hits);
+      let nwAr = [...images, ...data.hits]
+      setImages(nwAr);
     } catch (e) {
 
     }
@@ -23,9 +25,10 @@ function App() {
 
   const loadVideos = async () => {
     try {
-      const res = await window.fetch(`https://pixabay.com/api/videos/?key=${process.env.REACT_APP_PIXABAY_API_KEY}&q=${searchTerm}&pretty=true`);
+      const res = await window.fetch(`https://pixabay.com/api/videos/?key=${process.env.REACT_APP_PIXABAY_API_KEY}&q=${searchTerm}&pretty=true&page=${lodePage}`);
       const data = await res.json();
-      setVideos(data.hits);
+      let nwAr = [...videos, ...data.hits]
+      setVideos(nwAr);
     } catch (e) {
 
     }
@@ -33,34 +36,41 @@ function App() {
 
   const toggleVideo = (v) => {
     setIsImage(v)
+    setLoadePage(1);
+    setImages([]);
   }
 
   useEffect(() => {
     isImage ? loadImages() : loadVideos();
-  }, [searchTerm, isImage])
+  }, [searchTerm, isImage,lodePage])
 
   return (
     <div className="container mx-auto">
-      <SearchInput searchText={(text) => setSearchTerm(text)} swtichToVideo={toggleVideo} isImage={isImage} />
+      <SearchInput searchText={(text) =>  { setSearchTerm(text); setLoadePage(1); setImages([]);setVideos([]); }} swtichToVideo={toggleVideo} isImage={isImage} />
       <div className="grid  gap-4 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
         {
 
           isImage ?
             images.map((image) => {
               return (
-                <ImageCard searchText={(text) => setSearchTerm(text)} key={image.id} imageData={image} />
+                <ImageCard key={image.id} searchText={(text) => { setSearchTerm(text); setLoadePage(1); setImages([]);setVideos([]); } }  imageData={image} />
               )
             }) :
 
             videos.map((video) => {
               return (
-                <VideoCard searchText={(text) => setSearchTerm(text)} key={video.id} videoData={video} />
+                <VideoCard searchText={(text) =>  { setSearchTerm(text); setLoadePage(1); setVideos([]); setImages([]); }} key={video.id} videoData={video} />
               )
             })
         }
 
-
+        
       </div>
+      <div className="inset-x-0.bottom-0 p-4 text-center">
+          <button onClick={()=>setLoadePage(lodePage+1)} className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+            Load more
+</button>
+        </div>
     </div>
   );
 }
