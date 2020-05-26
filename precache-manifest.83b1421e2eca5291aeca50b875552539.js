@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a16336f5d139dc91872e4148a762795d",
+    "revision": "0fddb8f86bf403d3f7650bef09e7e383",
     "url": "/react-tailwind-pixaway/index.html"
   },
   {
-    "revision": "70ebddc24c2a2ffc7514",
+    "revision": "5951a091ec7e009b814d",
     "url": "/react-tailwind-pixaway/static/css/main.d8e9d6c7.chunk.css"
   },
   {
-    "revision": "119ed3b3fc9e417e8108",
-    "url": "/react-tailwind-pixaway/static/js/2.056803b8.chunk.js"
+    "revision": "2dd6c7adcecbfa55d705",
+    "url": "/react-tailwind-pixaway/static/js/2.14f6dff1.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/react-tailwind-pixaway/static/js/2.056803b8.chunk.js.LICENSE.txt"
+    "url": "/react-tailwind-pixaway/static/js/2.14f6dff1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "70ebddc24c2a2ffc7514",
-    "url": "/react-tailwind-pixaway/static/js/main.55da7a77.chunk.js"
+    "revision": "5951a091ec7e009b814d",
+    "url": "/react-tailwind-pixaway/static/js/main.f4bb33a5.chunk.js"
   },
   {
     "revision": "a558b53689750e427899",
