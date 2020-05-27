@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0fddb8f86bf403d3f7650bef09e7e383",
+    "revision": "087844213b97b1002e38aadc176d9d3d",
     "url": "/react-tailwind-pixaway/index.html"
   },
   {
-    "revision": "5951a091ec7e009b814d",
+    "revision": "9cb3825f89b51249eb2b",
     "url": "/react-tailwind-pixaway/static/css/main.d8e9d6c7.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-tailwind-pixaway/static/js/2.14f6dff1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5951a091ec7e009b814d",
-    "url": "/react-tailwind-pixaway/static/js/main.f4bb33a5.chunk.js"
+    "revision": "9cb3825f89b51249eb2b",
+    "url": "/react-tailwind-pixaway/static/js/main.a6802830.chunk.js"
   },
   {
     "revision": "a558b53689750e427899",

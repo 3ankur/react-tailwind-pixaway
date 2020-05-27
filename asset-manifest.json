@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-tailwind-pixaway/static/css/main.d8e9d6c7.chunk.css",
-    "main.js": "/react-tailwind-pixaway/static/js/main.f4bb33a5.chunk.js",
-    "main.js.map": "/react-tailwind-pixaway/static/js/main.f4bb33a5.chunk.js.map",
+    "main.js": "/react-tailwind-pixaway/static/js/main.a6802830.chunk.js",
+    "main.js.map": "/react-tailwind-pixaway/static/js/main.a6802830.chunk.js.map",
     "runtime-main.js": "/react-tailwind-pixaway/static/js/runtime-main.094ab171.js",
     "runtime-main.js.map": "/react-tailwind-pixaway/static/js/runtime-main.094ab171.js.map",
     "static/js/2.14f6dff1.chunk.js": "/react-tailwind-pixaway/static/js/2.14f6dff1.chunk.js",
     "static/js/2.14f6dff1.chunk.js.map": "/react-tailwind-pixaway/static/js/2.14f6dff1.chunk.js.map",
     "index.html": "/react-tailwind-pixaway/index.html",
-    "precache-manifest.83b1421e2eca5291aeca50b875552539.js": "/react-tailwind-pixaway/precache-manifest.83b1421e2eca5291aeca50b875552539.js",
+    "precache-manifest.7e35770c119ac8336690448951321f7b.js": "/react-tailwind-pixaway/precache-manifest.7e35770c119ac8336690448951321f7b.js",
     "service-worker.js": "/react-tailwind-pixaway/service-worker.js",
     "static/css/main.d8e9d6c7.chunk.css.map": "/react-tailwind-pixaway/static/css/main.d8e9d6c7.chunk.css.map",
     "static/js/2.14f6dff1.chunk.js.LICENSE.txt": "/react-tailwind-pixaway/static/js/2.14f6dff1.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.094ab171.js",
     "static/js/2.14f6dff1.chunk.js",
     "static/css/main.d8e9d6c7.chunk.css",
-    "static/js/main.f4bb33a5.chunk.js"
+    "static/js/main.a6802830.chunk.js"
   ]
 }
