@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-tailwind-pixaway/precache-manifest.7e35770c119ac8336690448951321f7b.js"
+  "/react-tailwind-pixaway/precache-manifest.5f0bba6c707c33a8e622f8991c4acb8f.js"
 );
 
 self.addEventListener('message', (event) => {
