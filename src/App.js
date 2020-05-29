@@ -51,15 +51,15 @@ function App() {
         {
 
           isImage ?
-            images.map((image) => {
+            images.map((image,idx) => {
               return (
-                <ImageCard key={image.id} searchText={(text) => { setSearchTerm(text); setLoadePage(1); setImages([]);setVideos([]); } }  imageData={image} />
+                <ImageCard key={`${image.id}_${idx}`} searchText={(text) => { setSearchTerm(text); setLoadePage(1); setImages([]);setVideos([]); } }  imageData={image} />
               )
             }) :
 
-            videos.map((video) => {
+            videos.map((video,idx) => {
               return (
-                <VideoCard searchText={(text) =>  { setSearchTerm(text); setLoadePage(1); setVideos([]); setImages([]); }} key={video.id} videoData={video} />
+                <VideoCard key={ `${video.id}_${idx}`} searchText={(text) =>  { setSearchTerm(text); setLoadePage(1); setVideos([]); setImages([]); }}  videoData={video} />
               )
             })
         }

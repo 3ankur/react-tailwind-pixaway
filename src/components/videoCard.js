@@ -3,28 +3,28 @@ import React, { useState } from "react";
 function VideoCard({ videoData, searchText }) {
     const [showVideo, setShowVide] = useState(null);
     const { videos, tags, user, views, downloads, likes, picture_id } = videoData;
-    const {tiny} = videos;
+    const { tiny } = videos;
     const videoPicture = `https://i.vimeocdn.com/video/${picture_id}_295x166.jpg`
     const tagList = tags.split(',') || []
 
 
     const updateIt = (ev) => {
-        if(ev==='over'){
+        if (ev === 'over') {
             setShowVide(true);
-        }else{
+        } else {
             setShowVide(false);
         }
     }
 
-    return (
 
+    return (
 
         <div onMouseOver={() => updateIt('over')} onMouseLeave={() => updateIt('out')} className="max-w-sm rounded overflow-hidden shadow-lg">
 
             {
                 !showVideo ? <img className="w-full" src={videoPicture} alt="Sunset in the mountains" /> :
                     <div className="w-full">
-                        <video autoplay="true" muted loop >
+                        <video className="w-full" id="myBackgroundVideoID" autoplay="true" poster={videoPicture} muted loop  >
                             <source type="video/mp4" src={tiny.url} />
                         </video>
                     </div>
@@ -55,8 +55,8 @@ function VideoCard({ videoData, searchText }) {
             </div>
             <div className="px-6 py-4">
                 {
-                    tagList.map((item) => {
-                        return (<span onClick={() => searchText(item)} className="cursor-pointer inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{`#${item}`}</span>);
+                    tagList.map((item, idx) => {
+                        return (<span key={`${item}_${idx}`} onClick={() => searchText(item)} className="cursor-pointer inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{`#${item}`}</span>);
                     })
                 }
 

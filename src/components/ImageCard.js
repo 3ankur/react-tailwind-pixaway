@@ -27,8 +27,8 @@ function ImageCard({ imageData, searchText }) {
             </div>
             <div className="px-6 py-4">
                 {
-                    tagList.map((item) => {
-                        return (<span key={item} onClick={()=>searchText(item)} className="cursor-pointer inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{`#${item}`}</span>);
+                    tagList.map((item,idx) => {
+                        return (<span key={`${item}_${idx}`} key={item} onClick={()=>searchText(item)} className="cursor-pointer inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{`#${item}`}</span>);
                     })
                 }
 
