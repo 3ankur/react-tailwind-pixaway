@@ -1,0 +1,44 @@
+{
+  "indentation": ["on", {
+    "Feature": 0,
+    "Background": 2,
+    "Scenario": 2,
+    "Step": 4,
+    "Examples": 4,
+    "example": 6,
+    "given": 4,
+    "when": 4,
+    "then": 4,
+    "and": 4,
+    "but": 4
+  }],
+  "new-line-at-eof": ["on", "yes"],
+  "no-duplicate-tags": "on",
+  "no-empty-background": "on",
+  "no-empty-file": "on",
+  "no-files-without-scenarios": "on",
+  "no-multiple-empty-lines": "on",
+  "no-partially-commented-tag-lines": "on",
+  "no-restricted-tags": ["on", {
+    "tags": ["@local", "@dev", "@todo", "@test", "@focus"]
+  }],
+  "no-scenario-outlines-without-examples": "on",
+  "no-superfluous-tags": "on",
+  "no-trailing-spaces": "on",
+  "no-unnamed-features": "on",
+  "no-unnamed-scenarios": "on",
+  "no-unused-variables": "off",
+  "use-and": "on",
+  "name-length": ["off", {
+    "Feature": 70,
+    "Scenario": 70,
+    "Step": 70
+  }],
+  "no-homogenous-tags": "off",
+  "no-dupe-scenario-names": "off",
+  "no-dupe-feature-names": "off",
+  "one-space-between-tags": "off",
+  "max-scenarios-per-file": ["on", {
+    "maxScenarios": 20
+  }]
+}

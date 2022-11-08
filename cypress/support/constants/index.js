@@ -1,0 +1,1 @@
+export const KNOWN_USER = 'KNOWN_USER';
